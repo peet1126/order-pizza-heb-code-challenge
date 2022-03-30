@@ -1,38 +1,149 @@
 .App {
+  font-family: sans-serif;
+  text-align: center;
+  color: #333;
+  max-width: 900px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.navbar button {
+  background: rgb(9, 113, 241);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Home styles */
+
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    display: block;
+  }
+}
+
+/* order queue style */
+
+.order-queue,
+.create {
+  width: 100%;
+  padding: 10px;
+}
+
+.order-queue h2 {
+  font-size: 20px;
+  color: rgb(9, 113, 241);
+  margin-bottom: 30px;
+}
+
+/* order card styles */
+
+.order-card {
+  text-align: left;
+  border: solid gray 1px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  margin: 10px 0;
+}
+
+.order-card h2 {
+  color: rgb(9, 113, 241);
+  margin-bottom: 5px;
+}
+
+.order-card .company {
+  color: gray;
+  margin-top: 0px;
+}
+
+/* event section styles */
+
+.event {
+  text-align: left;
+  border: solid gray 1px;
+  border-radius: 5px;
+  padding: 0 20px;
+  margin: 10px 0;
+}
+
+.event-name {
+  color: rgb(9, 113, 241);
+}
+
+.event article div {
+  color: gray;
+}
+
+.event article div p {
+  color: #333;
+  margin-top: 5px;
+}
+
+.event-buttons {
+  display: flex;
+  justify-content: space-around;
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+.event button {
+  background: rgb(9, 113, 241);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* create new event form styles*/
+.create {
+  max-width: 400px;
+  margin: 0 auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.create label {
+  text-align: left;
+  display: block;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.create h2 {
+  font-size: 20px;
+  color: rgb(9, 113, 241);
+  margin-bottom: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.create button {
+  background: rgb(9, 113, 241);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
