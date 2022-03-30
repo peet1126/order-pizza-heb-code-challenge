@@ -14,7 +14,7 @@ export default function OrderCard({ order, handleDelete }) {
             onClick={() => handleDelete(order.Order_ID)}
             className="delete"
           >
-            X
+            Delete
           </button>
         </div>
       )}

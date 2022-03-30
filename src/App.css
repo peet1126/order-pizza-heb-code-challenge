@@ -41,6 +41,16 @@ a {
   }
 }
 
+/* order form styles */
+
+.form-card {
+  text-align: left;
+  border: solid gray 1px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  margin: 10px 0;
+}
+
 /* order queue style */
 
 .order-queue,
@@ -63,6 +73,8 @@ a {
   border-radius: 5px;
   padding: 20px 20px;
   margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .order-card h2 {
@@ -70,9 +82,19 @@ a {
   margin-bottom: 5px;
 }
 
-.order-card .company {
-  color: gray;
-  margin-top: 0px;
+.order-card ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.order-card button {
+  background: rgb(9, 113, 241);
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 20%;
 }
 
 /* event section styles */

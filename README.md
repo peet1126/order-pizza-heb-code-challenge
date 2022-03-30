@@ -1,4 +1,60 @@
-# Getting Started with Create React App
+# Peter McDonald's Project Summary
+
+The goal of this project was to build a pizza ordering application for a restaurant's staff. The user is able to log in, create a pizza order, see an order queue in list format, and delete orders from the order queue. This app is connected to a third-party API, and the user logs in with an authentification token. The user-created orders are added to the API, and the order queue renders all of the API instances.
+
+I used Redux to manage the user's authentification token, log-in status, and log-in errors to demonstrate my state management skillset. I also used standard React prop drilling to manage the rest of the state across the application. For the routs, I used React Router Dom version.
+
+I did run into an issue when attempting to connect to the Order Pizza API provided. This issue proved to be the crux of the project. I could not run GET, POST, or DELETE requests without running into a CORS error (No 'Access-Control-Allow-Origin' header is present on the requested resource). I do not know if this was designed as a part of the assessment, but I had to use a workaround to continue developing the application. In the end, I used a Chrome plug-in to change these response header values. This solution is not ideal, but I decided to use the plug-in in order to finish the requirements for this project. I am curious about finding a real solution to this CORS issue, and I look forward to hearing how others have solved this issue.
+
+## Instructions to Run This Project Locally
+
+- Navigate to my GitHub repository and clone the project.
+
+- - GitHub Repository link - https://github.com/peet1126/order-pizza-heb-code-challenge
+
+- In your terminal, navigate to the place you would like this project to be stored and run the command:
+
+```
+$ git clone https://github.com/peet1126/order-pizza-heb-code-challenge.git
+```
+
+- Then, CD into the repository and run the command "npm install"
+
+```
+$ cd order-pizza-heb-code-challenge/
+$ npm install
+```
+
+- Next, run the command "npm start" and open your Chrome browser to http://localhost:3000/
+
+```
+$ npm start
+```
+
+- Then, you will have to install the Chrome plug-in, ModHeader, into your browser in order to circumvent the cors errors.
+
+ModHeader link-https://chrome.google.com/webstore/detail/modheader/idgpnmonknjnojddfkpgkljpfnnfcklj/related
+
+- Open up the ModHeader plug-in and insert the following three Response headers:
+
+```
+Name: Access-Control-Allow-Headers | Value: *
+Name: Access-Control-Allow-Origin | Value: *
+Name:Access-Control-Allow-Methods | Value: *
+```
+
+- Next, refresh the http://localhost:3000/ page, and the app should be working as intended.
+
+- To log in, enter the following:
+
+```
+username: test
+password: test
+```
+
+## Boilerplate create-react-app README
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

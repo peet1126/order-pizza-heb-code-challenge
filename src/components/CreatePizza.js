@@ -49,7 +49,7 @@ export default function CreatePizza({ handleFetch }) {
   return (
     <div className="create">
       <h2>Create A Pizza</h2>
-      <form onSubmit={handleSubmit} className="order-card">
+      <form onSubmit={handleSubmit} className="form-card">
         <label>Crust:</label>
         <input
           type="text"
